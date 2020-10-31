@@ -9,7 +9,6 @@
     android:elevation="10dp"
     app:cardCornerRadius="10dp"
     android:id="@+id/shops"
-    app:cardBackgroundColor="@color/purple_200"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp">
 

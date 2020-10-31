@@ -7,9 +7,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,6 +24,7 @@ public class HaineActivity extends AppCompatActivity {
 
     RecyclerView mHaineList;
     DatabaseReference mDatabase;
+    Button buton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,15 @@ public class HaineActivity extends AppCompatActivity {
                     haineViewHolder.setDetalii(haina.getDetalii());
                     haineViewHolder.setImagine(getApplicationContext(),haina.getImagine());
 
+                    haineViewHolder.buton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent a = new Intent(HaineActivity.this, AR.class);
+                            a.putExtra("id","1");
+                            startActivity(a);
+                        }
+                    });
+
             }
         };
 
@@ -68,6 +80,7 @@ public class HaineActivity extends AppCompatActivity {
 
         private ImageView imagine;
         private TextView nume,detalii;
+        private Button buton;
 
         public  HaineViewHolder(@NonNull View itemView){
 
@@ -77,6 +90,7 @@ public class HaineActivity extends AppCompatActivity {
             imagine = (ImageView) mView.findViewById(R.id.imagineprodus);
             nume = (TextView) mView.findViewById(R.id.numeprodus);
             detalii = (TextView) mView.findViewById(R.id.detalii);
+            buton = (Button) mView.findViewById(R.id.tryItOut);
 
         }
 

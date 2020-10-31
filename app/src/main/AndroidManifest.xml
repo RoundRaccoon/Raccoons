@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Raccoons">
-        <activity android:name=".CategoriiActivity"></activity>
+        <activity android:name=".AR"></activity>
+        <activity android:name=".CategoriiActivity" />
         <activity android:name=".MagazineActivity" />
         <activity android:name=".HaineActivity" />
         <activity android:name=".MainActivity">

@@ -51,6 +51,7 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:layout_margin="2dp"
+                android:id="@+id/tryItOut"
                 android:text="Try it on"/>
             <Button
                 android:layout_width="wrap_content"

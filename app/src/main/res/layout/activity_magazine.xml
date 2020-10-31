@@ -20,27 +20,24 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
 
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="180dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="10dp"
             app:cardCornerRadius="10dp"
-            android:id="@+id/shops1"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:id="@+id/shops1">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-
-                android:layout_margin="15dp">
+                android:background="@color/cardview_light_background"
+                android:padding="15dp">
 
                 <ImageView
                     android:layout_width="120dp"
@@ -68,21 +65,16 @@
             android:layout_width="wrap_content"
             android:layout_height="180dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="10dp"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops2"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_alignParentRight="true">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-
-                android:layout_margin="15dp">
+                android:background="@color/cardview_light_background"
+                android:padding="15dp">
 
                 <ImageView
                     android:layout_width="120dp"
@@ -110,27 +102,24 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
 
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="180dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="10dp"
             app:cardCornerRadius="10dp"
-            android:id="@+id/shops3"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:id="@+id/shops3">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-
-                android:layout_margin="15dp">
+                android:background="@color/cardview_light_background"
+                android:padding="15dp">
 
                 <ImageView
                     android:layout_width="120dp"
@@ -158,21 +147,16 @@
             android:layout_width="wrap_content"
             android:layout_height="180dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="10dp"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops4"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_alignParentRight="true">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-
-                android:layout_margin="15dp">
+                android:background="@color/cardview_light_background"
+                android:padding="15dp">
 
                 <ImageView
                     android:layout_width="120dp"
@@ -200,27 +184,24 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
 
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="180dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="10dp"
             app:cardCornerRadius="10dp"
-            android:id="@+id/shops5"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:id="@+id/shops5">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-
-                android:layout_margin="15dp">
+                android:background="@color/cardview_light_background"
+                android:padding="15dp">
 
                 <ImageView
                     android:layout_width="120dp"
@@ -248,21 +229,16 @@
             android:layout_width="wrap_content"
             android:layout_height="180dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="10dp"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops6"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_alignParentRight="true">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-
-                android:layout_margin="15dp">
+                android:background="@color/cardview_light_background"
+                android:padding="15dp">
 
                 <ImageView
                     android:layout_width="120dp"
@@ -286,6 +262,86 @@
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/shops7">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/cardview_light_background"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:id="@+id/shopLogo7"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nume shop"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/nameShop7"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/shops8"
+                    android:layout_alignParentRight="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/cardview_light_background"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:id="@+id/shopLogo8"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nume shop"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/nameShop8"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
 
         </LinearLayout>
 

@@ -6,23 +6,44 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView cardView1;
+    Button fizicButton,onlineButton,customButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_magazine);
+        setContentView(R.layout.activity_main);
 
-        cardView1 = (CardView) findViewById(R.id.shops1);
+        fizicButton = (Button) findViewById(R.id.fizic);
+        onlineButton = (Button) findViewById(R.id.online);
+        customButton = (Button) findViewById(R.id.custom);
 
-        cardView1.setOnClickListener(new View.OnClickListener() {
+        fizicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivity.this,CategoriiActivity.class));
+                // activitate qr
+
+            }
+        });
+
+        onlineButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this,MagazineActivity.class));
+
+            }
+        });
+
+        customButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // activitate personalizare
 
             }
         });

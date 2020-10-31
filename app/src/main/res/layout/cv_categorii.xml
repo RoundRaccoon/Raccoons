@@ -7,7 +7,8 @@
     app:cardBackgroundColor="@color/purple_200"
     app:cardCornerRadius="10dp"
     android:layout_margin="10dp"
-    app:cardElevation="15dp">
+    app:cardElevation="15dp"
+    android:id="@+id/Stock">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +29,7 @@
                 android:gravity="center"
                 android:textStyle="bold"
                 android:layout_margin="2dp"
-                android:id="@+id/numeprodus"/>
+                android:id="@+id/numeStock"/>
 
 
     </LinearLayout>

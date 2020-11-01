@@ -1,5 +1,6 @@
 package com.example.raccoons;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -8,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,4 +66,32 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 0) {
+
+            if (resultCode == RESULT_OK) {
+                String contents = data.getStringExtra("SCAN_RESULT");
+                //Toast.makeText(this,""+contents,Toast.LENGTH_SHORT).show();
+
+                Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+                Uri intentUri =
+                        Uri.parse("https://arvr.google.com/scene-viewer/1.0").buildUpon()
+                                .appendQueryParameter("file", contents)
+                                .appendQueryParameter("mode", "ar_preferred")
+                                .build();
+                sceneViewerIntent.setData(intentUri);
+                sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+
+                startActivity(sceneViewerIntent);
+
+            }
+            if(resultCode == RESULT_CANCELED){
+                //handle cancel
+            }
+        }
+
+    }
 }

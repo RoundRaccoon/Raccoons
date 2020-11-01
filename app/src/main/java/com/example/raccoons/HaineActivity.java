@@ -28,6 +28,7 @@ public class HaineActivity extends AppCompatActivity {
     DatabaseReference mDatabase;
     Button buton;
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

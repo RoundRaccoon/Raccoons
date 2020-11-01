@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.raccoons">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -11,8 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Raccoons">
+        <activity android:name=".AR"/>
         <activity android:name=".Model"></activity>
-        <activity android:name=".AR" />
         <activity android:name=".CategoriiActivity" />
         <activity android:name=".MagazineActivity" />
         <activity android:name=".HaineActivity" />

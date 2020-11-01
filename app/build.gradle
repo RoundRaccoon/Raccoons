@@ -9,6 +9,9 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
+    aaptOptions.cruncherEnabled = true
+    aaptOptions.useNewCruncher = true
+
     defaultConfig {
         applicationId "com.example.raccoons"
         minSdkVersion 21

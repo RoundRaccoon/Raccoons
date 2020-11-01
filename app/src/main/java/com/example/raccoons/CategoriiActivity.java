@@ -63,6 +63,7 @@ public class CategoriiActivity extends AppCompatActivity {
                 final String post_key = getRef(i).getKey();
 
                 categorieViewHolder.setImagine(getApplicationContext(),categorie.getImagine());
+                categorieViewHolder.setImagine2(getApplicationContext(),categorie.getImagine2());
                 categorieViewHolder.setNume(categorie.getNume());
 
                 categorieViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +86,7 @@ public class CategoriiActivity extends AppCompatActivity {
 
         View mView;
 
-        ImageView imagine;
+        ImageView imagine,imagine2;
         TextView nume;
         CardView cardView;
 
@@ -95,6 +96,7 @@ public class CategoriiActivity extends AppCompatActivity {
             mView = itemView;
 
             imagine = (ImageView) mView.findViewById(R.id.imagineStock);
+            imagine2 = (ImageView)mView.findViewById(R.id.imagineStock2);
             nume = (TextView) mView.findViewById(R.id.numeStock);
             cardView = (CardView) mView.findViewById(R.id.Stock);
 
@@ -109,6 +111,18 @@ public class CategoriiActivity extends AppCompatActivity {
                     .fit()
                     //    .centerInside()
                     .into(imagine);
+
+        }
+
+        public void setImagine2(Context ctx, String image)
+        {
+
+            Picasso
+                    .with(ctx)
+                    .load(image)
+                    .fit()
+                    //    .centerInside()
+                    .into(imagine2);
 
         }
 

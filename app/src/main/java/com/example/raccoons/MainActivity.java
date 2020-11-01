@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // activitate personalizare
+                startActivity(new Intent(MainActivity.this,Model.class));
 
             }
         });

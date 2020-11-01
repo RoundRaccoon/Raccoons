@@ -3,6 +3,7 @@ package com.example.raccoons;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuView;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -78,6 +79,17 @@ public class HaineActivity extends AppCompatActivity {
                         }
                     });
 
+                    haineViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                            Intent intent = new Intent(HaineActivity.this,SingleActivity.class);
+                            intent.putExtra("id",post_key);
+                            startActivity(intent);
+
+                        }
+                    });
+
             }
         };
 
@@ -92,6 +104,7 @@ public class HaineActivity extends AppCompatActivity {
         private ImageView imagine;
         private TextView nume,detalii;
         private Button buton;
+        private CardView cardView;
 
         public  HaineViewHolder(@NonNull View itemView){
 
@@ -102,6 +115,7 @@ public class HaineActivity extends AppCompatActivity {
             nume = (TextView) mView.findViewById(R.id.numeprodus);
             detalii = (TextView) mView.findViewById(R.id.detalii);
             buton = (Button) mView.findViewById(R.id.tryItOut);
+            cardView = (CardView) mView.findViewById(R.id.cardHaina);
 
         }
 

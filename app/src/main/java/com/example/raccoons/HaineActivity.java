@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,8 +28,6 @@ public class HaineActivity extends AppCompatActivity {
 
     RecyclerView mHaineList;
     DatabaseReference mDatabase;
-    Button buton;
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -73,9 +72,33 @@ public class HaineActivity extends AppCompatActivity {
                     haineViewHolder.buton.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent a = new Intent(HaineActivity.this, AR.class);
-                            a.putExtra("id","1");
-                            startActivity(a);
+
+                            if(i==2) {
+                                Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+                                Uri intentUri =
+                                        Uri.parse("https://arvr.google.com/scene-viewer/1.0").buildUpon()
+                                                .appendQueryParameter("file", "https://github.com/GhiaraD/Test_the_sequel/blob/master/alex_mic-processed.glb?raw=true")
+                                                .appendQueryParameter("mode", "ar_preferred")
+                                                .build();
+                                sceneViewerIntent.setData(intentUri);
+                                sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+
+                                startActivity(sceneViewerIntent);
+                            }
+                            if(i==4)
+                            {
+                                Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+                                Uri intentUri =
+                                        Uri.parse("https://arvr.google.com/scene-viewer/1.0").buildUpon()
+                                                .appendQueryParameter("file", "https://github.com/GhiaraD/Test_the_sequel/blob/master/tricou_ok-processed.glb?raw=true")
+                                                .appendQueryParameter("mode", "ar_preferred")
+                                                .build();
+                                sceneViewerIntent.setData(intentUri);
+                                sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+
+                                startActivity(sceneViewerIntent);
+                            }
+
                         }
                     });
 

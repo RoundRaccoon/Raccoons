@@ -27,7 +27,7 @@
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops1">
@@ -54,7 +54,7 @@
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops2"
@@ -92,7 +92,7 @@
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops3">
@@ -119,7 +119,7 @@
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops4"
@@ -156,7 +156,7 @@
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops5">
@@ -183,7 +183,7 @@
         <androidx.cardview.widget.CardView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
-            android:layout_height="180dp"
+            android:layout_height="150dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             app:cardCornerRadius="10dp"
             android:id="@+id/shops6"
@@ -209,6 +209,70 @@
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/shops7">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/cardview_light_background"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:id="@+id/shopLogo7"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/shops8"
+                    android:layout_alignParentRight="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/cardview_light_background"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:id="@+id/shopLogo8"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
 
         </LinearLayout>
 

@@ -25,6 +25,7 @@ public class SingleActivity extends AppCompatActivity {
     ImageView img;
     String key;
     DatabaseReference mDatabase;
+    TextView S,M,L;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,9 @@ public class SingleActivity extends AppCompatActivity {
             nume = (TextView) findViewById(R.id.singlenume);
             desc = (TextView) findViewById(R.id.singledesc);
             img = (ImageView) findViewById(R.id.singleimage);
+            S = (TextView) findViewById(R.id.S);
+            M = (TextView) findViewById(R.id.M);
+            M = (TextView) findViewById(R.id.L);
 
             key = getIntent().getStringExtra("id");
             mDatabase = FirebaseDatabase.getInstance().getReference().child("haine").child(key);

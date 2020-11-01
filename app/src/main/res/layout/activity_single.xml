@@ -110,6 +110,51 @@
 
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="S"
+                android:textSize="60dp"
+                android:background="@drawable/btn_style"
+                android:textAlignment="center"
+                android:id="@+id/S"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="M"
+                android:textSize="60dp"
+                android:background="@drawable/btn_style_3"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:id="@+id/M"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="L"
+                android:textSize="60dp"
+                android:textAlignment="center"
+                android:background="@drawable/btn_style_3"
+                android:layout_alignParentRight="true"
+                android:id="@+id/L"/>
+
+
+        </RelativeLayout>
+
     </LinearLayout>
 
 </LinearLayout>

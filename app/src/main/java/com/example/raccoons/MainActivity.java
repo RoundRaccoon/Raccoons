@@ -9,20 +9,21 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button fizicButton,onlineButton,customButton;
+    LinearLayout fizicButton,onlineButton,customButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fizicButton = (Button) findViewById(R.id.fizic);
-        onlineButton = (Button) findViewById(R.id.online);
-        customButton = (Button) findViewById(R.id.custom);
+        fizicButton = (LinearLayout) findViewById(R.id.fizic);
+        onlineButton = (LinearLayout) findViewById(R.id.online);
+        customButton = (LinearLayout) findViewById(R.id.custom);
 
         fizicButton.setOnClickListener(new View.OnClickListener() {
             @Override
